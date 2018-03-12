@@ -16,13 +16,14 @@ function appendToDom(){
 $('#generate').on('click', function (){
   console.log('on click');
 $('#container').css('background-color', 'red');
+missed();
 onClick();
   });//end click
 }//end func
 function missed(){
   outputElement = $('.buttons');
   $('#generate').on('click');
-outputElement.append(<div id= "something"></div>)
+  outputElement.append('<div id= "something"></div>');
 }
 function onClick(){
 count += 1;
